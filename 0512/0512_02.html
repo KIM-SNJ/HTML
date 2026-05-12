@@ -5,51 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        #container {
-            position: relative;
+        body {
             width: 500px;
-            height: 300px;
-            border-width: 3px;
-            border-color: black;
-            border-style: solid;
-            overflow: hidden;
+            margin: 10px auto;
         }
-        .circle {
-            position: absolute;
-            width: 100px;
-            height: 100px;
-            border-radius: 50% 50%;
+        #top {
+            background-color: lightblue;
         }
-        #red{
-            background-color: red;
-            top: 20px;
-            left: 20px;
+        #bottom {
+            background-color: lightgreen;
         }
-        #green{
-            background-color: green;
-            top: 20px;
-            right: 20px;
+        #middle {
+            display: flex;
         }
-        #yellow{
-            background-color: yellow;
-            bottom: 20px;
-            left: 20px;
+        #left {
+            background-color: lightcoral;
+            width: 150px;
         }
-        #blue{
-            background-color: blue;
-            bottom: 20px;
-            right: 20px;
+        #right {
+            background-color: lightyellow;
+            width: 300px;
         }
     </style>
 </head>
 <body>
-    <h1>부모 요소는 position을 relative로 설정해야</h1>
-    <div id = "container">
-        <div id = "red" class = "circle"></div>
-        <div id = "green" class = "circle"></div>
-        <div id = "blue" class = "circle"></div>
-        <div id = "yellow" class = "circle"></div>
+    <div id = "top">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit voluptatibus necessitatibus consequatur distinctio suscipit cum ea sint porro iure veritatis eaque sed numquam maxime fuga laudantium beatae quisquam, excepturi doloremque.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit voluptatibus necessitatibus consequatur distinctio suscipit cum ea sint porro iure veritatis eaque sed numquam maxime fuga laudantium beatae quisquam, excepturi doloremque.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit voluptatibus necessitatibus consequatur distinctio suscipit cum ea sint porro iure veritatis eaque sed numquam maxime fuga laudantium beatae quisquam, excepturi doloremque.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit voluptatibus necessitatibus consequatur distinctio suscipit cum ea sint porro iure veritatis eaque sed numquam maxime fuga laudantium beatae quisquam, excepturi doloremque.
     </div>
-    <h1>자식 요소는 position을 absolute로 설정해서 절대 위치에 배치할 수 있다.</h1>
+    <div id = "middle">
+        <div id = "left">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit voluptatibus necessitatibus consequatur distinctio suscipit cum ea sint porro iure veritatis eaque sed numquam maxime fuga laudantium beatae quisquam, excepturi doloremque.
+        </div>
+        <div id = "right">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit voluptatibus necessitatibus consequatur distinctio suscipit cum ea sint porro iure veritatis eaque sed numquam maxime fuga laudantium beatae quisquam, excepturi doloremque.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit voluptatibus necessitatibus consequatur distinctio suscipit cum ea sint porro iure veritatis eaque sed numquam maxime fuga laudantium beatae quisquam, excepturi doloremque.
+        </div>
+    </div>
+    <div id = "bottom">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit voluptatibus necessitatibus consequatur distinctio suscipit cum ea sint porro iure veritatis eaque sed numquam maxime fuga laudantium beatae quisquam, excepturi doloremque.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit voluptatibus necessitatibus consequatur distinctio suscipit cum ea sint porro iure veritatis eaque sed numquam maxime fuga laudantium beatae quisquam, excepturi doloremque.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit voluptatibus necessitatibus consequatur distinctio suscipit cum ea sint porro iure veritatis eaque sed numquam maxime fuga laudantium beatae quisquam, excepturi doloremque.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit voluptatibus necessitatibus consequatur distinctio suscipit cum ea sint porro iure veritatis eaque sed numquam maxime fuga laudantium beatae quisquam, excepturi doloremque.
+    </div>
 </body>
 </html>
