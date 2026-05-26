@@ -5,18 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>반환값이 있는 선언적 함수</title>
     <script>
-        function power(x, y) {
-            let result = 1
-            for(let i = 0; i < y ;i ++) {
-                result *= x;
+        function tenTimes(callback) {
+            for (let i = 0; i < 10; i ++) {
+                callback();
             }
-            return result;
         }
 
+        let fun = function() {
+            alert("익명함수 호출");
+        }
 
+        tenTimes(fun);
     </script>
 </head>
 <body>
-    <button onclick = "alert(power(7, 3))">제곱승 계산결과</button>
+    
 </body>
 </html>
