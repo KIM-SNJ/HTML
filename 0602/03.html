@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>요소객체 속성 조작</title>
+    <script>
+        // textContent, innerHTML
+        window.onload = function() {
+            let img1 = document.getElementById("img1");
+
+            // img1.src = "http://placehold.co/300x200";
+            img1.src = "imgs/image.png";
+            img1.width = 300;
+            img1.height = 200;
+        }
+        let im = 0;
+        function anbutton() {
+            if (im == 0) {
+                img1.src = "imgs/an.jpg";
+                im = 1;
+            }
+            else {
+                img1.src = "imgs/image.png";
+                im = 0;
+            }
+        } 
+    </script>
+</head>
+<body>
+    <button onclick="anbutton()">동물이미지 변경</button>
+    <br><br>
+    <img id = "img1">
+</body>
+</html>
